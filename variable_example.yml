@@ -1,0 +1,14 @@
+- hosts: all
+  gather_facts: false
+  become: true
+  tasks:
+
+    - name: Echo on '{{ env }} env'
+      debug:
+        msg: "Hello from {{ env }} !!!"
+
+    - name: Echo list on '{{ env }} env'
+      debug:
+        msg: 
+          - "ID {{ who.name }} !!!"
+          - "ID {{ who.state }} !!!"

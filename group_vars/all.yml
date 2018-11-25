@@ -1,0 +1,4 @@
+env: common
+who: 
+  name: four
+  state: absent
