@@ -2,3 +2,4 @@ env: common
 who: 
   name: four
   state: absent
+surname: Smith
